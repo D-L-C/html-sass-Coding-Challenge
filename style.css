@@ -102,7 +102,7 @@ input {
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
-  margin-right: 10px; }
+  margin-right: 2%; }
   .footerbutton1:hover {
     background-color: #FBFBFB;
     border: 1px solid #555555;
