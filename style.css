@@ -101,7 +101,7 @@ input {
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
-  margin-right: 2%; }
+  margin-right: 3.5%; }
   .footerbutton1:hover {
     background-color: #FBFBFB;
     border: 1px solid #555555;
@@ -120,8 +120,7 @@ input {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  margin-left: 15px; }
+  border-radius: 0.2em; }
   .footerbutton2:hover {
     background-color: #FBFBFB;
     border: 1px solid #555555;
