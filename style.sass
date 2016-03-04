@@ -10,3 +10,71 @@
 //mixins start
 //
 //*********************
+
+=font-size($sizeValue: 12)
+  font-size: $sizeValue + px
+  font-size: 0.125 * $sizeValue + rem
+
+=breakpoint($point)
+  @if $point == large
+    @media (min-width: 64.375em)
+      @content
+  @else if $point == medium
+    @media (min-width: 50em)
+      @content
+  @else if $point == small
+    @media (min-width: 37.5em)
+      @content
+
+=clearfix
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=box-shadow($top, $left, $blur, $color, $inset: "")
+  -webkit-box-shadow: $top $left $blur $color #{$inset}
+  -moz-box-shadow: $top $left $blur $color #{$inset}
+  box-shadow: $top $left $blur $color #{$inset}
+
+=pagewidth
+  width: 300px
+  @media screen and (orientation: landscape)
+    width: 313px
+
+=hover
+  background-color: #FBFBFB
+  border: 1px solid #555555
+  color: #555555
+
+=rounded($radius: 0.5em)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+=speech-bubble($size, $background)
+  background: $background
+  display: inline-block
+  padding: $size - 5px
+  position: relative
+  +rounded(0.2em)
+  +font-size(8)
+  &:before
+    content: ''
+    position: absolute
+    right: 39px
+    top: 114%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    border-top: $size solid $background
+    border-left: $size * 0.7 solid transparent
+    border-right: $size * 0.7 solid transparent
+    border-bottom: $size / 2 solid transparent
+
+	
+//*********************
+// Mixins end
+//*********************
+
